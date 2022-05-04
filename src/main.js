@@ -122,6 +122,6 @@
   ];
   let div = document.getElementById("images");
   for (let i = 0; i < gallery.length; i++) {
-    div.innerHTML += `<div id='info'><img src='${gallery[i].src}' width = '${gallery[i].width}' height = '${gallery[i].height}' alt = '${gallery[i].alt}'><p id='lead'>${gallery[i].alt}</p> <p id='lead'>${gallery[i].ingredients}</p></div>`;
+    div.innerHTML += `<div id='info'><img src='${gallery[i].src}' width = '${gallery[i].width}' height = '${gallery[i].height}' alt = '${gallery[i].alt}'><p>${gallery[i].alt}</p> <p>${gallery[i].ingredients}</p></div>`;
   }
 })();
