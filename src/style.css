@@ -1,0 +1,60 @@
+* {
+  margin: auto;
+  padding: auto;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: grey grey;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(219, 219, 219);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 20px;
+  border: 3px solid grey;
+}
+
+.container {
+  display: flex;
+  flex-flow: wrap row;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+body {
+  background-color: grey;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 5px;
+  border: 5px solid grey;
+  border-image: linear-gradient(white, grey) 25/5px;
+}
+
+#images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+}
+
+img {
+  background-color: white;
+}
+h1 {
+  color: white;
+}
